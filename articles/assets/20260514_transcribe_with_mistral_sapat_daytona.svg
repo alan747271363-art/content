@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Sapat and Mistral transcription workflow in Daytona</title>
+  <desc id="desc">A workflow showing a Daytona workspace converting video to MP3, sending audio to Mistral Voxtral, and producing reviewable transcript artifacts.</desc>
+  <rect width="1200" height="680" fill="#f8fafc"/>
+  <rect x="70" y="92" width="1060" height="496" rx="28" fill="#ffffff" stroke="#d8dee9" stroke-width="3"/>
+  <text x="90" y="56" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#111827">Mistral transcription with Sapat inside Daytona</text>
+  <text x="90" y="86" font-family="Arial, sans-serif" font-size="16" fill="#4b5563">Keep the workspace reproducible, keep secrets out of Git, and review the transcript before reuse.</text>
+
+  <rect x="115" y="180" width="210" height="120" rx="18" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="145" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#075985">Daytona workspace</text>
+  <text x="145" y="254" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">Clone Sapat</text>
+  <text x="145" y="278" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">Install dependencies</text>
+
+  <rect x="395" y="180" width="210" height="120" rx="18" fill="#ecfdf5" stroke="#16a34a" stroke-width="2"/>
+  <text x="425" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#166534">Input media</text>
+  <text x="425" y="254" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">Meeting or demo video</text>
+  <text x="425" y="278" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">Converted to MP3</text>
+
+  <rect x="675" y="180" width="210" height="120" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="705" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#92400e">Mistral Voxtral</text>
+  <text x="705" y="254" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">audio/transcriptions</text>
+  <text x="705" y="278" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">Provider selected by CLI</text>
+
+  <rect x="955" y="180" width="130" height="120" rx="18" fill="#f3e8ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="982" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#6b21a8">Output</text>
+  <text x="982" y="254" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">.txt file</text>
+  <text x="982" y="278" font-family="Arial, sans-serif" font-size="15" fill="#0f172a">QA notes</text>
+
+  <path d="M330 240 H388" stroke="#64748b" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M610 240 H668" stroke="#64748b" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M890 240 H948" stroke="#64748b" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="160" y="388" width="880" height="96" rx="18" fill="#111827"/>
+  <text x="190" y="428" font-family="Consolas, monospace" font-size="18" fill="#f9fafb">sapat demo.mp4 --quality H --language en --api mistral</text>
+  <text x="190" y="462" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">MISTRAL_API_KEY stays in the workspace environment, not in the repository.</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
